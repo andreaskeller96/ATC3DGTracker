@@ -36,6 +36,21 @@ const int DELAY = 500;
 #define TRANSMITTER_SERIAL_NUMBER   0x1B // 2 bytes
 #define SUDDEN_OUTPUT_CHANGE_LOCK   0x0E // 1 byte
 #define FBB_AUTO_CONFIGURATION      0x32
+#define SENSOR_STATUS_MSG           0x7A
+#define SENSOR_GET_CHANGE           0x10
+#define SENSOR_SET_HEMISPHERE       0x16
+
+#define UNKNOWN_SET_AFTER_STATUS    0x6401
+
+
+// Hemisphere Options
+#define HEMISPHERE_FRONT            0x0000
+#define HEMISPHERE_BACK             0x0001
+#define HEMISPHERE_TOP              0x0c01
+#define HEMISPHERE_BOTTOM           0x0c00
+#define HEMISPHERE_LEFT             0x0601
+#define HEMISPHERE_RIGHT            0x0600
+
 
 // Conversions
 const double WTF = 1.0/32768; // word to float
